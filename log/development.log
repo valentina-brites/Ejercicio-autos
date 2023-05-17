@@ -96,3 +96,266 @@ FOREIGN KEY ("user_id")
   [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-05-17 16:58:22 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered C:/Ruby32-x64/lib/ruby/gems/3.2.0/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 45.9ms | Allocations: 693)
+Completed 200 OK in 213ms (Views: 95.5ms | ActiveRecord: 0.0ms | Allocations: 6047)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 16:58:33 -0300
+  
+SyntaxError (C:/Users/Usuario/Desktop/Ejercicio-autos/app/controllers/cars_controller.rb:29: syntax error, unexpected `end'
+end  
+^~~
+):
+  
+app/controllers/cars_controller.rb:29: syntax error, unexpected `end'
+app/controllers/cars_controller.rb:29: syntax error, unexpected `end'
+app/controllers/cars_controller.rb:29: syntax error, unexpected `end'
+Started GET "/cars/index" for ::1 at 2023-05-17 16:59:16 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 12.6ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 996.8ms | Allocations: 96011)
+Completed 200 OK in 1071ms (Views: 1005.7ms | Allocations: 98473)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:00:48 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 10.9ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 2819)
+Completed 200 OK in 51ms (Views: 44.3ms | Allocations: 3608)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:01:31 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 123)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 2753)
+Completed 200 OK in 47ms (Views: 41.1ms | Allocations: 3543)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:02:37 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 16.6ms | Allocations: 118)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 2743)
+Completed 200 OK in 49ms (Views: 44.1ms | Allocations: 3525)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:02:45 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 9.9ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 2742)
+Completed 200 OK in 46ms (Views: 41.2ms | Allocations: 3524)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:11:11 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 10.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 2719)
+Completed 200 OK in 50ms (Views: 40.5ms | Allocations: 3501)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:11:50 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 11.3ms | Allocations: 113)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 2747)
+Completed 200 OK in 40ms (Views: 34.8ms | Allocations: 3534)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:12:12 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 2730)
+Completed 200 OK in 48ms (Views: 39.3ms | Allocations: 3512)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:12:45 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 12.9ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 2729)
+Completed 200 OK in 52ms (Views: 43.8ms | Allocations: 3511)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:13:05 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 10.2ms | Allocations: 110)
+  Rendered layout layouts/application.html.erb (Duration: 33.0ms | Allocations: 2747)
+Completed 200 OK in 71ms (Views: 66.5ms | Allocations: 3529)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-17 17:13:26 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 10.0ms | Allocations: 211)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 2546)
+Completed 200 OK in 174ms (Views: 27.3ms | ActiveRecord: 1.6ms | Allocations: 18664)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-17 17:14:01 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 2840)
+Completed 200 OK in 47ms (Views: 40.3ms | ActiveRecord: 0.0ms | Allocations: 3625)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-17 17:14:34 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 11.8ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 28.7ms | Allocations: 2819)
+Completed 200 OK in 52ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 3605)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-17 17:14:35 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 2361)
+Completed 200 OK in 26ms (Views: 18.2ms | ActiveRecord: 0.0ms | Allocations: 2657)
+
+
+Started GET "/cars/index" for ::1 at 2023-05-17 17:18:21 -0300
+Processing by CarsController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 12.7ms | Allocations: 117)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 2773)
+Completed 200 OK in 42ms (Views: 37.8ms | ActiveRecord: 0.0ms | Allocations: 3555)
+
+
+Started GET "/cars/create" for ::1 at 2023-05-17 17:29:52 -0300
+Processing by CarsController#create as HTML
+Completed 400 Bad Request in 4ms (Allocations: 515)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/new" for ::1 at 2023-05-17 17:30:09 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 212)
+  Rendered layout layouts/application.html.erb (Duration: 20.7ms | Allocations: 2867)
+Completed 200 OK in 70ms (Views: 65.1ms | Allocations: 3619)
+
+
+Started GET "/cars/create" for ::1 at 2023-05-17 17:30:23 -0300
+Processing by CarsController#create as HTML
+Completed 400 Bad Request in 4ms (Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/create?brand=tonto" for ::1 at 2023-05-17 17:34:55 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"brand"=>"tonto"}
+Completed 400 Bad Request in 5ms (Allocations: 480)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/create?brand=tonto&model=" for ::1 at 2023-05-17 17:35:20 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"brand"=>"tonto", "model"=>""}
+Completed 400 Bad Request in 3ms (Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/create?brand=tonto&model=Berna&price=$1" for ::1 at 2023-05-17 17:35:40 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"brand"=>"tonto", "model"=>"Berna", "price"=>"$1"}
+Completed 400 Bad Request in 5ms (Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/create?brand=tonto&model=Berna&price=1" for ::1 at 2023-05-17 17:35:47 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"brand"=>"tonto", "model"=>"Berna", "price"=>"1"}
+Completed 400 Bad Request in 4ms (Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/car/create?brand=tonto&model=Berna&price=1" for ::1 at 2023-05-17 17:36:25 -0300
+  
+ActionController::RoutingError (No route matches [GET] "/car/create"):
+  
+Started GET "/cars/create?brand=tonto&model=Berna&price=1" for ::1 at 2023-05-17 17:36:35 -0300
+Processing by CarsController#create as HTML
+  Parameters: {"brand"=>"tonto", "model"=>"Berna", "price"=>"1"}
+Completed 400 Bad Request in 3ms (Allocations: 479)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: car):
+  
+app/controllers/cars_controller.rb:27:in `car_params'
+app/controllers/cars_controller.rb:11:in `create'
+Started GET "/cars/new" for ::1 at 2023-05-17 17:39:49 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 11.2ms | Allocations: 2379)
+Completed 200 OK in 17ms (Views: 13.6ms | Allocations: 2676)
+
+
+Started POST "/create" for ::1 at 2023-05-17 17:40:19 -0300
+  
+ActionController::RoutingError (No route matches [POST] "/create"):
+  
+Started GET "/cars/new" for ::1 at 2023-05-17 17:40:19 -0300
+Processing by CarsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 0.1ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 13.5ms | Allocations: 2400)
+Completed 200 OK in 19ms (Views: 15.8ms | Allocations: 2698)
+
+

@@ -1,2 +1,10 @@
-<h1>Cars#new</h1>
-<p>Find me in app/views/cars/new.html.erb</p>
+ <h1>Subir un nuevo auto para su venta</h1>
+ <form action='/create' method='post'>
+<label for='brand'>Marca:</label>
+<input type='text' name='brand' id='brand'><br>
+<label for='model'>Modelo:</label>
+<input type='text' name='model' id='model'><br>
+<label for='price'>Precio:</label>
+<input type='number' name='price' id='price'><br>
+<input type='submit' value='Enviar'>
+</form>

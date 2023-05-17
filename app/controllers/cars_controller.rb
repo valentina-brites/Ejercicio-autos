@@ -24,6 +24,5 @@ end
 
 private
   def car_params
-    params.require(:car).permit(:make, :mode, year)
-  end
-end  
+    params.require(:car).permit(:brand, :model, :price)
+  end  
