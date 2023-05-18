@@ -1,2 +1,9 @@
-<h1>Cars#show</h1>
-<p>Find me in app/views/cars/show.html.erb</p>
+<h1>Detalles de auto ingresado</h1>
+<strong>Marca: <%= @car.brand%></strong>
+</br>
+<strong>Modelo: <%= @car.model%></strong>
+</br>
+<strong>Precio: <%= @car.price%></strong>
+</br>
+
+<%= link_to 'Back', cars_path %>

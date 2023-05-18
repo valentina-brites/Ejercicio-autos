@@ -1,28 +1,31 @@
 class CarsController < ApplicationController
+
   def index
-    @cars = Car.all
+    @car = Car.all
   end
 
   def new
-    @cars = Car.new
+    @car = Car.new
   end
 
   def create
-    @cars = Car.create(car_params)
-
+    @car = current_user.cars.new(car_params)
     if @car.save
-      redirect_to car_path(@car), notice: 'Car create succesfully'
+      flash[:notice] = 'se salvo un auto correctamente'
+      redirect_to car_path(@car)
     else
+      flash[:error] = @car.errors.full_messages
       render :new
     end
   end
 
   def show
-    @cars = Car.find(car_params[:id])
+    @car = Car.find(params[:id])
   end
-end
 
-private
+  private
+
   def car_params
     params.require(:car).permit(:brand, :model, :price)
   end  
+end

@@ -12,9 +12,9 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_05_17_155443) do
   create_table "cars", force: :cascade do |t|
-    t.string "brand"
-    t.string "model"
-    t.decimal "price"
+    t.string "brand", null: false
+    t.string "model", null: false
+    t.decimal "price", null: false
     t.integer "user_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

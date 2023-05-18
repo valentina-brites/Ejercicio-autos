@@ -1,10 +1,16 @@
- <h1>Subir un nuevo auto para su venta</h1>
- <form action='/create' method='post'>
-<label for='brand'>Marca:</label>
-<input type='text' name='brand' id='brand'><br>
-<label for='model'>Modelo:</label>
-<input type='text' name='model' id='model'><br>
-<label for='price'>Precio:</label>
-<input type='number' name='price' id='price'><br>
-<input type='submit' value='Enviar'>
-</form>
+<h1>Subir un nuevo auto para su venta</h1>
+
+<%= flash[:error]%>
+
+<%= form_with model: @car, url: cars_path do |form| %>
+    <label> Marca </label>
+  <%= form.text_field :brand  %> 
+  <br/>
+  <label> Modelo </label>
+  <%= form.text_field :model %>
+  <br/>
+  <label> Price </label>
+  <%= form.number_field :price %>
+  <br/>
+  <%= form.submit 'Enviar' %>
+<% end %>
