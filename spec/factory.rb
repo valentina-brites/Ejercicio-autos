@@ -1,11 +1,11 @@
-FactoryBot.define do 
+Factory_bot_rails.define do 
     factory :user do 
         email { 'vale@duarte.com' } 
         password { 'Agus-Brites' } 
         end
     end
 
-    FactoryBot.define do 
+    Factory_bot_rails.define do 
         factory :car do 
             brand { 'Toyota' } 
             model { 'Toyota 1.2' } 

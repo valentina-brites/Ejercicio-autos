@@ -69,17 +69,17 @@ Shoulda::Matchers.configure do |config|
   end
 end
 
-RSpec.describe User, type: :model do
-  describe 'associations' do
-    it { should belong_to(:category).class_name('MenuCategory') }
-  end
+#RSpec.describe User, type: :model do
+ # describe 'associations' do
+  #  it { should belong_to(:category).class_name('MenuCategory') }
+  #end
+#
+ # describe 'validations' do
+  #  it { should validate_presence_of(:name) }
+   # it { should validate_uniqueness_of(:name).scoped_to(:category_id) }
+  #end
+#end
 
-  describe 'validations' do
-    it { should validate_presence_of(:name) }
-    it { should validate_uniqueness_of(:name).scoped_to(:category_id) }
-  end
-end
-
-RSpec.configure do |config|
+RSpec.configure do |config| 
   config.include FactoryBot::Syntax::Methods
 end

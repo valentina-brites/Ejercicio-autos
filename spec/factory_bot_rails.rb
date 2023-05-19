@@ -1,4 +1,4 @@
-# spec/factory_bot.rb
+# spec/factory_bot_rails.rb
 RSpec.configure do |config| 
 config.include FactoryBot::Syntax::Methods 
 
