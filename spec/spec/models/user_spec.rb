@@ -7,7 +7,7 @@ RSpec.describe User, type: :model do
     it { should validate_length_of(:password).is_at_least(6) } 
   end 
 
-  describe 'validation_car' do 
+  describe 'validation_user' do 
     let(:user) { FactoryBot.create(:user) } 
 
     it "is valid with valid attributes" do 
