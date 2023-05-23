@@ -1,7 +1,7 @@
 require 'rails_helper'
 require 'factory_bot_rails'
 
-RSpec.describe User, type: :model do 
+RSpec.describe Car, type: :model do 
   let(:user) { create(:user)}
   describe 'validations' do 
     it { should validate_presence_of(:brand) } 
@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
     #end 
 
     it "is not valid without a brand" do 
-      car.brand = 
+      car.brand = nil
       expect(car).not_to be_valid 
     end 
     
