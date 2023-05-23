@@ -4540,3 +4540,98 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 20ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 4049)
 
 
+Started GET "/" for ::1 at 2023-05-20 13:23:44 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+Completed 401 Unauthorized in 82ms (ActiveRecord: 0.0ms | Allocations: 2561)
+
+
+Started GET "/users/sign_in" for ::1 at 2023-05-20 13:23:45 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 47.3ms | Allocations: 729)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 172.8ms | Allocations: 3828)
+  Rendered layout layouts/application.html.erb (Duration: 659.5ms | Allocations: 38935)
+Completed 200 OK in 823ms (Views: 763.5ms | ActiveRecord: 0.9ms | Allocations: 47304)
+
+
+Started GET "/users/sign_up" for ::1 at 2023-05-20 13:23:53 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 12.9ms | Allocations: 235)
+  Rendered devise/shared/_links.html.erb (Duration: 0.7ms | Allocations: 155)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 46.5ms | Allocations: 2056)
+  Rendered layout layouts/application.html.erb (Duration: 55.7ms | Allocations: 4318)
+Completed 200 OK in 64ms (Views: 61.0ms | ActiveRecord: 0.0ms | Allocations: 5435)
+
+
+Started POST "/users" for ::1 at 2023-05-20 13:24:10 -0300
+Processing by Devise::RegistrationsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"email"=>"mama@gl.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mama@gl.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (4.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "mama@gl.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2023-05-20 16:24:11.188822"], ["updated_at", "2023-05-20 16:24:11.188822"]]
+  [1m[36mTRANSACTION (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://[::1]:3000/
+Completed 303 See Other in 570ms (ActiveRecord: 9.9ms | Allocations: 10429)
+
+
+Started GET "/" for ::1 at 2023-05-20 13:24:11 -0300
+Processing by CarsController#index as TURBO_STREAM
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 13.9ms | Allocations: 200)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 2478)
+Completed 200 OK in 119ms (Views: 35.0ms | ActiveRecord: 0.4ms | Allocations: 5944)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-20 13:24:25 -0300
+Processing by CarsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 43.9ms | Allocations: 928)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 3150)
+Completed 200 OK in 105ms (Views: 61.5ms | ActiveRecord: 2.3ms | Allocations: 8402)
+
+
+Started POST "/cars" for ::1 at 2023-05-20 13:24:36 -0300
+Processing by CarsController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "car"=>{"brand"=>"prueba", "model"=>"2.a", "price"=>"43534"}, "commit"=>"Enviar"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/cars_controller.rb:13:in `create'
+  [1m[36mCar Create (1.8ms)[0m  [1m[32mINSERT INTO "cars" ("brand", "model", "price", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["brand", "prueba"], ["model", "2.a"], ["price", 43534.0], ["user_id", 2], ["created_at", "2023-05-20 16:24:37.054365"], ["updated_at", "2023-05-20 16:24:37.054365"]]
+  ↳ app/controllers/cars_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (5.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/cars_controller.rb:13:in `create'
+Redirected to http://[::1]:3000/cars/3
+Completed 302 Found in 214ms (ActiveRecord: 7.7ms | Allocations: 6641)
+
+
+Started GET "/cars/3" for ::1 at 2023-05-20 13:24:37 -0300
+Processing by CarsController#show as TURBO_STREAM
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mCar Load (0.4ms)[0m  [1m[34mSELECT "cars".* FROM "cars" WHERE "cars"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/cars_controller.rb:23:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering cars/show.html.erb within layouts/application
+  Rendered cars/show.html.erb within layouts/application (Duration: 10.5ms | Allocations: 220)
+  Rendered layout layouts/application.html.erb (Duration: 26.4ms | Allocations: 2400)
+Completed 200 OK in 44ms (Views: 28.8ms | ActiveRecord: 0.9ms | Allocations: 5178)
+
+
+Started GET "/cars" for ::1 at 2023-05-20 13:24:43 -0300
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 2230)
+Completed 200 OK in 26ms (Views: 16.5ms | ActiveRecord: 0.3ms | Allocations: 3813)
+
+

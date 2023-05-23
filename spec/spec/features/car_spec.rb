@@ -3,10 +3,10 @@ require 'capybara/rspec'
 
 RSpec.describe 'User authentication', type: :feature do
     describe 'when logged in' do
-        let(:user) { create(:user) }
+        let(:car) { create(:user) }
 
     before do
-     login_as(user, scope: :user)
+     login_as(car, scope: :user)
     end
 
     it 'displays the cars page' do
@@ -14,6 +14,7 @@ RSpec.describe 'User authentication', type: :feature do
         expect(page).to have_content('New Car')
     end
  end
+
 
     describe 'when not logged in' do
     it 'redirects to the login page' do
