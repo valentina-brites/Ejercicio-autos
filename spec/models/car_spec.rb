@@ -11,9 +11,9 @@ RSpec.describe Car, type: :model do
   describe 'validation_car' do 
    let(:car) { create(:car, user: user) }
 
-    #it "is valid with valid attributes" do 
-      #expect(car).to be_valid 
-    #end 
+    it "is valid with valid attributes" do 
+      expect(car).to be_valid 
+    end 
 
     it "is not valid without a brand" do 
       car.brand = nil

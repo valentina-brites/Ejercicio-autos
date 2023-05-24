@@ -5315,3 +5315,24 @@ Processing by CarsController#new as HTML
 Completed 200 OK in 183ms (Views: 154.5ms | ActiveRecord: 1.1ms | Allocations: 21936)
 
 
+Started GET "/" for ::1 at 2023-05-24 12:13:58 -0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by CarsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering cars/index.html.erb within layouts/application
+  Rendered cars/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 523)
+  Rendered layout layouts/application.html.erb (Duration: 181.5ms | Allocations: 35819)
+Completed 200 OK in 313ms (Views: 198.5ms | ActiveRecord: 1.6ms | Allocations: 49902)
+
+
+Started GET "/cars/new" for ::1 at 2023-05-24 12:14:00 -0300
+Processing by CarsController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering layout layouts/application.html.erb
+  Rendering cars/new.html.erb within layouts/application
+  Rendered cars/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 1176)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 3364)
+Completed 200 OK in 54ms (Views: 26.2ms | ActiveRecord: 1.8ms | Allocations: 8607)
+
+
