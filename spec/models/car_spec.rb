@@ -1,5 +1,4 @@
 require 'rails_helper'
-require 'factory_bot_rails'
 
 RSpec.describe Car, type: :model do 
   let(:user) { create(:user)}
@@ -29,6 +28,6 @@ RSpec.describe Car, type: :model do
     it "is not valid without a price" do 
       car.price = nil 
       expect(car).not_to be_valid 
-      end  
     end
   end
+end

@@ -1,5 +1,4 @@
 require 'rails_helper' 
-require 'factory_bot' 
 
 RSpec.describe User, type: :model do 
   describe 'validations' do 
